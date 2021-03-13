@@ -1,0 +1,89 @@
+.background {
+    background-color: rgb(255, 252, 244); /*another colour */
+    padding-top: 96px;
+    padding-bottom: 137px;
+}
+
+.gifts {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gilroy', sans-serif;
+    display: grid;
+    grid-template-areas: "title title title title"
+                         "text text text text"
+                         "cards cards cards cards";
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gifts h2 {
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 23px;
+    grid-area: title;
+}
+
+.gifts p {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 64px;
+    grid-area: text;
+}
+
+.gifts p::before {
+    content: "“";
+}
+
+.gifts p::after {
+    content: "”";
+}
+
+.gifts-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    grid-area: cards;   
+}
+
+.gifts-cards li {
+    background-color: #FAFAFA;
+    transition: all 0.3s;
+}
+
+.gifts-cards li:hover {
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gifts-cards figcaption {
+    display: grid;
+    row-gap: 74px;
+    padding: 24px;
+}
+
+.gifts-cards img {
+    width: 100%;
+}
+
+.gifts-cards h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+.gifts-cards a {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000000;
+}
+
+.gifts-cards a::after {
+    content: " ›";
+}
